@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+
+body{
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( to right ,#9cdad9 ,rgb(98, 214, 208));
+    height: 100vh;
+}
+
+.main-div{
+    width: 400px;
+    height: 500px;
+    border-radius: 30px 30px;
+    box-shadow: 0 0 10px 0 rgb(95, 95, 95);
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgb(73, 214, 73);
+}
+
+.main-div h1 a{
+    font-family: 'Hammersmith One', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+.div-form{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 300px;
+}
+
+.input-field, .password-field{
+    border: none;
+    padding: 20px;
+    border-radius: 30px 30px;
+    background-color: rgb(98, 214, 208);
+    outline: none;
+    width: 300px;
+    box-shadow: 0 0 10px 0 rgb(72, 72, 72);
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.button:hover{
+    background-color: rgb(59, 206, 199);
+}
+
+.button{
+    width: 200px;
+    font-size: 18px;
+    border: none;
+    padding: 15px;
+    border-radius: 30px 30px;
+    background-color: rgb(74, 202, 196);
+    cursor: pointer;
+    font-family: 'Hammersmith One', sans-serif;
+    box-shadow: 0 0 10px 0 rgb(72, 72, 72);
+    transition: 0.3s;
+}
+
+.button-zoom-in{
+    font-size: 27px;
+    width: 290px;
+}
+
+.input-text-zoom-out{
+    width: 250px;
+    font-size: 15px;
+    padding: 15px;
+}
+
+::placeholder{
+    color: black;
+    opacity: 0.9;
+    font-size: 15px;
+    font-family:  'Open Sans', sans-serif;
+}
+
+.form-error-1, .form-error-2{
+    margin: 10px;
+    font-family:  'Open Sans', sans-serif;
+    padding-left: 10px;
+    font-size: 13px;
+    color: rgb(72, 33, 33);
+    text-align: left;
+    font-weight: 500;
+    
+}
+
+.div-input-error{
+    height: 90px; 
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}

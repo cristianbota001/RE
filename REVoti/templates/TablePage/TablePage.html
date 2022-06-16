@@ -1,0 +1,74 @@
+{% load static %}
+{% load REVoti_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'TablePage/TablePage.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{% static 'TablePage/TablePage.js' %}"></script>
+    <title>Voti</title>
+</head>
+<body>
+    <div class="div-table">
+        <table>
+            
+            {% for sub,grad_l in materie.items %}
+                <tr>
+                    <th>{{sub}}</th>
+                    
+                    {% for cont in maxx %}
+                        <td>{{ grad_l | list_index:cont }}</td>
+                    {% endfor %}
+
+                </tr>
+            {% endfor %}
+            
+        </table>
+        <div class="buttons-div-table">
+            <div class="add-button">
+                <input type="button" value="Aggiungi materia">
+            </div>
+                <a href="{% url 'HomePage' %}">Esci</a>
+        </div>
+    </div>
+    <div class="subject-window">
+        <h1>Aggiungi materie</h1>
+        <div class="div-input-field">
+            <input type="text" placeholder="Materia" class="input-field">
+            <p></p>
+        </div>
+        <div class="div-input">
+            <input type="button" value="Salva" class="button">
+            <input type="button" value="Annulla" class="button-annulla">
+        </div>
+    </div>
+    <div class="subject-options">
+        <div class="update-field">
+            <input type="text" placeholder= "Materia" class="input-field tt1">
+            <input type="button" value="Aggiorna" class="aggiorna">
+        </div>
+        <hr style="width: 400px; border: 1px solid #9fda9c;">
+        <div class="add-grade-field">
+            <input type="text" placeholder = "Voto" class="input-field grade-field">
+            <input type="button" value="Salva" class="salva-voto">
+        </div>
+        <hr style="width: 400px;  border: 1px solid #9fda9c;">
+        <div class="elimina-reset-field">
+            <input type="button" value="Reset voti" class="reset-voti">
+            <input type="button" value="Elimina materia" class="elimina-materia">
+            <input type="button" value="Annulla" class="annulla">
+        </div>
+    </div>
+    <div class="grade-option">
+        <div class="update-grade-field">
+            <input type="text" placeholder = "Voto" class="input-field update-grade-field">
+            <input type="button" value="Salva" class="update-voto">
+        </div>
+        <input type="button" value="Annulla" class="update-annulla">
+    </div>
+</body>
+</html>

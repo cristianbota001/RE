@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+
+body{
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient( to left ,#9cdaa3 ,rgb(98, 214, 98));
+}
+
+.main-div{
+    width: 400px;
+    height: 300px;
+    background-color: rgb(98, 121, 214);
+    border-radius: 30px 30px;
+    box-shadow: 0 0 10px 0 rgb(95, 95, 95);
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.main-div h1{
+    font-family: 'Hammersmith One', sans-serif;
+    transition: 0.3s;
+}
+
+.main-div-zoom{
+    width: 420px;
+    height: 320px;
+    box-shadow: 0 0 30px 0 rgb(95, 95, 95);
+}
+
+.main-div-h1-zoom{
+    font-size: 28px;
+}
+
+.main-div-buttons{
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-div-buttons-a-tag{
+    text-decoration: none;
+    font-family: 'Hammersmith One', sans-serif;
+    color: rgb(228, 228, 228);
+    border-radius: 30px 30px;
+    background-color: rgb(74, 102, 214);
+    padding: 10px;
+    text-align: center;
+    transition: 0.3s;
+    font-size: 21px;
+    width: 150px;
+}
+
+.main-div-buttons-a-tag-zoom{
+    font-size: 28px;
+    width: 220px;
+}
+
+.main-div-buttons a:hover{
+    background-color: #94f8a0;
+    color: rgb(74, 102, 214);
+}
+
+.main-div-buttons p{
+    font-family: 'Hammersmith One', sans-serif;
+    color: rgb(228, 228, 228);
+    transition: 0.3s;
+}
+
+.oppure{
+    font-size: 20px;
+}
+
+
+

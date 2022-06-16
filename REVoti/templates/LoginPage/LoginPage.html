@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'LoginPage/LoginPage.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{% static 'LoginPage/LoginPage.js' %}"></script>
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="main-div">
+        <h1><a href="{% url 'HomePage' %}">Registro Voti</a></h1>
+        <form method="post">
+            {% csrf_token %}
+            <div class="div-form">
+                <div class = "div-input-error">
+                    <input type="text" class="input-field" placeholder="Username">
+                    <p class="form-error-1"></p>
+                </div>
+                <div class = "div-input-error">
+                    <input type="password" class="password-field" placeholder="Password">
+                    <p class="form-error-2"></p>
+                </div>
+                <input type="button" class="button" value="Accedi">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

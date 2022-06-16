@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'HomePage/HomePage.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{% static 'HomePage/HomePage.js' %}"></script>
+    <title>RE</title>
+</head>
+<body>
+    <div class="main-div">
+        <h1>Registro Elettronico</h1>
+        <div class="main-div-buttons">
+            <a class = "main-div-buttons-a-tag" href="{% url 'LoginPage' %}">Accedi</a>
+            <p>oppure</p>
+            <a class = "main-div-buttons-a-tag" href="{% url 'RegisterPage' %}">Iscriviti</a>
+        </div>
+    </div>
+</body>
+</html>

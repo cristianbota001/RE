@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+
+body{
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(183, 248, 188);
+}
+
+table{
+    display: block;
+    border-collapse: collapse;
+    overflow-x: auto;
+    overflow-y: auto;
+    width: 1000px;
+    max-height: 300px;
+    min-height: 100px;
+}
+
+td, th {
+    border: 1px solid rgb(87, 167, 110);
+    text-align: left;
+    padding: 10px;
+    font-family:  'Open Sans', sans-serif;
+    min-width: 50px;
+    cursor: pointer;
+  }
+
+  tr{
+    background-color: #89c290;
+  }
+
+  th:hover{
+      background-color: #abbbad;
+  }
+  td:hover{
+      background-color: #abbbad;
+  }
+  td{
+    text-align: center;
+  }
+  th{
+      min-width: 200px;
+  }
+  
+
+.div-table{
+    max-height: 400px;
+    background-color: #62d06e;
+    border-radius: 30px 30px;
+    box-shadow: 0 0 10px 0 black;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 1000px;
+    flex-direction: column;
+    align-items: center;
+    filter: none;
+}
+
+
+.subject-window{
+    width: 500px;
+    height: 300px;
+    background-color: rgb(61, 162, 106);
+    border-radius: 30px 30px;
+    box-shadow: 0 0 10px 0 rgb(82, 82, 82);
+    display: none;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Hammersmith One', sans-serif;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.input-field{
+    border: none;
+    padding: 20px;
+    border-radius: 30px 30px;
+    background-color: #9fda9c;
+    outline: none;
+    width: 300px;
+    box-shadow: 0 0 10px 0 rgb(38, 38, 38);
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.div-input-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.div-input-field p{
+    font-family:  'Open Sans', sans-serif;
+    font-size: 13px;
+    color: rgb(114, 45, 45);
+    margin:0%;
+   
+}
+
+::placeholder{
+    color: black;
+    opacity: 0.9;
+    font-size: 15px;
+    font-family:  'Open Sans', sans-serif;
+}
+
+.button, .button-annulla, .aggiorna, .salva-voto, .reset-voti, .elimina-materia, .annulla, .update-voto, .update-annulla{
+    width: 150px;
+    font-size: 18px;
+    border: none;
+    padding: 15px;
+    border-radius: 30px 30px;
+    background-color: #62d06e;
+    cursor: pointer;
+    font-family: 'Hammersmith One', sans-serif;
+    box-shadow: 0 0 10px 0 rgb(38, 38, 38);
+    transition: 0.3s;
+}
+
+.button:hover{
+    background-color: #85c98d;
+}
+
+.button:active{
+    background-color: #62d06e;
+}
+
+.add-button input{
+    width: 200px;
+    font-size: 18px;
+    border: none;
+    padding: 15px;
+    border-radius: 30px 30px;
+    background-color: #62a4d0;
+    cursor: pointer;
+    font-family: 'Hammersmith One', sans-serif;
+    box-shadow: 0 0 10px 0 rgb(38, 38, 38);
+    transition: 0.3s;
+    margin-right: 20px;
+}
+
+.add-button input:hover{
+    background-color: #84afcc;
+}
+
+
+.aggiorna:hover, .salva-voto:hover, .reset-voti:hover, .elimina-materia:hover{
+    background-color: #85c98d;
+}
+
+.buttons-div-table{
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    width: 900px;
+}
+ a{
+    width: 200px;
+    font-size: 18px;
+    border: none;
+    padding: 15px;
+    border-radius: 30px 30px;
+    background-color: #d36f95;
+    cursor: pointer;
+    font-family: 'Hammersmith One', sans-serif;
+    box-shadow: 0 0 10px 0 rgb(38, 38, 38);
+    transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+ a:hover{
+    background-color: #ce87a2;
+    
+}
+
+.div-input{
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+}
+
+.button-annulla, .annulla, .update-annulla{
+    background-color:#d36f95;
+}
+
+.button-annulla:hover, .annulla:hover{
+    background-color: #ce87a2;
+}
+
+.subject-options{
+    width: 500px;
+    height: 400px;
+    background-color: rgb(61, 162, 106);
+    border-radius: 30px 30px;
+    box-shadow: 0 0 10px 0 rgb(82, 82, 82);
+    display: none;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.update-field{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+}
+
+.add-grade-field, .elimina-reset-field{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    width: 500px;
+}
+
+.add-grade-field{
+    width: 300px;
+}
+
+.grade-field{
+    width: 80px;
+}
+
+.grade-option{
+    width: 500px;
+    height: 300px;
+    background-color: rgb(61, 162, 106);
+    border-radius: 30px 30px;
+    box-shadow: 0 0 10px 0 rgb(82, 82, 82);
+    display: none;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}

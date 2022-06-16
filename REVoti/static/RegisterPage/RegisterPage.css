@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+
+body{
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( to left ,#d39cda ,rgb(151, 116, 206));
+    height: 100vh;
+}
+
+.main-div{
+    width: 400px;
+    height: 500px;
+    border-radius: 30px 30px;
+    box-shadow: 0 0 10px 0 rgb(41, 41, 41);
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgb(238, 132, 187);
+}
+
+.main-div h1 a{
+    font-family: 'Hammersmith One', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+.div-form{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 400px;
+    transition: 0.3s;
+}
+
+.username, .password1, .password2{
+    border: none;
+    padding: 20px;
+    border-radius: 30px 30px;
+    background-color: #d39cda;
+    outline: none;
+    width: 300px;
+    box-shadow: 0 0 10px 0 rgb(38, 38, 38);
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+::placeholder{
+    color: black;
+    opacity: 0.9;
+    font-size: 15px;
+    font-family:  'Open Sans', sans-serif;
+}
+
+.button:hover{
+    background-color: #cf7eda;
+}
+
+.button{
+    width: 200px;
+    font-size: 18px;
+    border: none;
+    padding: 15px;
+    border-radius: 30px 30px;
+    background-color: #cd85d6;
+    cursor: pointer;
+    font-family: 'Hammersmith One', sans-serif;
+    box-shadow: 0 0 10px 0 rgb(38, 38, 38);
+    transition: 0.3s;
+}
+
+.button-zoom-in{
+    font-size: 27px;
+    width: 290px;
+}
+
+.input-text-zoom-out{
+    width: 250px;
+    font-size: 15px;
+    padding: 15px;
+}
+
+.form-error-1, .form-error-2, .form-error-3{
+    margin: 10px;
+    font-family:  'Open Sans', sans-serif;
+    font-size: 13px;
+    color: rgb(114, 45, 45);
+    
+    
+}
+
+.div-input-error{
+    height: 90px; 
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}

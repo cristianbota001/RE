@@ -1,0 +1,37 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'RegisterPage/RegisterPage.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{% static 'RegisterPage/RegisterPage.js' %}"></script>
+    <title>Register Page</title>
+</head>
+<body>
+    <div class="main-div">
+        <h1><a href="{% url 'HomePage' %}">Registro Voti</a></h1>
+        <form>
+            {% csrf_token %}
+            <div class="div-form">
+                <div class = "div-input-error">
+                    <input type="text" class = "username" placeholder="Username">
+                    <p class="form-error-1">{% for err in errors.username %} {{ err }} {% endfor %}</p>
+                </div>
+                <div class = "div-input-error">
+                    <input type="password" class = "password1" placeholder="Password">
+                    <p class="form-error-2">{% for err in errors.password1 %} {{ err }} {% endfor %}</p>
+                </div>
+                <div class = "div-input-error">
+                    <input type="password" class = "password2" placeholder="Password">
+                    <p class="form-error-3">{% for err in errors.password2 %} {{ err }} {% endfor %}</p>
+                </div>
+                <input type="button" class="button" value="Iscriviti">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
